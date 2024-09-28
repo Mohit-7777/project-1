@@ -1,5 +1,6 @@
 // require('dotenv').config({path: './env'})        if we use require dotenv, then we don't need dotenv.config
 import dotenv from "dotenv"
+import { app } from "./app.js";
 
 // import mongoose from "mongoose";
 // import { DB_NAME } from "./constants";

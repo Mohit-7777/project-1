@@ -67,3 +67,17 @@ Without secrets: If the theater didn’t check your ticket carefully with a secr
 Why use them?
 Tokens make it easy for you to keep watching movies (or using the website) without constantly needing to log in again.
 Secrets make sure that only real, valid tickets are being used, keeping the website secure from fake users.
+
+
+
+
+npm i cloudinary
+
+
+
+
+npm i multer            
+
+
+data flow
+multer-------------->local Server-------------->cloudinary---------------->cloud Server

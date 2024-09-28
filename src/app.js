@@ -28,6 +28,16 @@ app.use(express.static("public"))                   //Used to store the files li
 
 app.use(cookieParser())                             //to access the cookies and use cookies from user browser
                                                     //only server can use it and server can remove it
+
+
+//routes import
+import userRouter from "./routes/user.routes.js"
                                                     
+//routes declaration
+app.use("/api/v1/users", userRouter )
+
+// http://localhost:8000/api/v1/users/register
+// http://localhost:8000/api/v1/users/login        automatically
+
 
 export { app }
