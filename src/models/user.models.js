@@ -58,7 +58,7 @@ userSchema.pre("save", async function (next){
   if(!this.isModified("password"))return next()     //if password is not getting modified or updated
 
 
-    this.password = decrypt.hash(this.password, 10)     //hash(what to hash, No. of rounds)
+    this.password = await decrypt.hash(this.password, 10)     //hash(what to hash, No. of rounds)
     next()                                          //it wouldve hashed everytime we change anything like avatar or sth
 })                                                  //so we used if statement to avoid this situation
 

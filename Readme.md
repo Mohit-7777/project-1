@@ -81,3 +81,37 @@ npm i multer
 
 data flow
 multer-------------->local Server-------------->cloudinary---------------->cloud Server
+
+
+
+
+
+
+
+
+
+
+
+Controller Folder:
+
+The controller contains functions (or methods) that manage the application's business logic. These functions handle incoming HTTP requests and return responses based on the application's logic.
+The controller does not define the API endpoints themselves but is responsible for processing the data and sending responses.
+API Folder (or Routes Folder):
+
+The routes folder (or sometimes an api folder) is where you define the actual API endpoints. Here, you map HTTP methods (e.g., GET, POST, PUT, DELETE) to specific controller functions.
+For example, you would define that a GET request to /api/products is handled by a method from the product controller.
+Common Structure (Node.js Example):
+
+
+/controllers
+    productController.js
+    userController.js
+/routes (or /api)
+    productRoutes.js
+    userRoutes.js
+/models
+    productModel.js
+    userModel.js
+routes/productRoutes.js: Defines the API endpoints like /api/products.
+controllers/productController.js: Contains the logic for handling requests for products.
+models/productModel.js: Represents the database schema and operations for products.
